@@ -18,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Finds the inverse matrix, either by calculation or in cache, 
-## depending on whether if the matrix is stored or not.
+## depending on whether the matrix is stored or not.
 cachesolve <- function(x, ...) {
   m <- x$getinverse()
   if(!is.null(m)) {
