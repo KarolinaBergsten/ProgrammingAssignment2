@@ -1,7 +1,7 @@
 
 ## This two functions stores and finds the inverse for a matrix x.
 
-## Defines the and store the matrix x.
+## Defines and store the matrix x.
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -17,8 +17,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Finds the inverse matrix, either by calculation or in cache, 
-## depending on whether the matrix is stored or not.
+## Finds the inverse matrix, either by calculation or in cache 
+## depending on whether the matrix has been runned or not.
 cachesolve <- function(x, ...) {
   m <- x$getinverse()
   if(!is.null(m)) {
